@@ -1,2 +1,1 @@
-# snippet-js-site-main
-Created with CodeSandbox
+# This is the snippet.js site
