@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>snippet.js</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/style.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    
+  </head>
+  <body>
+      <header class="sticky">
+          <a class="logo" href="/"><img id="logo" src="images/logo.png" alt="logo"></a>
+          <img src="images/moon.png" alt="darkMode" id="icon">
+          <nav>
+              <ul class="nav__links">
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="https://github.com/RoboSapiens2021/snippet.js" target="_blank">Github</a></li>
+              </ul>
+              
+          </nav>
+          
+      </header>
+
+    <section>
+      <div >
+        <h1 style="margin-top:2em;">The Snippet Library </br>for <span class="gradient">Everyone,</span></h1>
+       <p>Snippet.js is an easy to use library for displaying code. Built for Everyone</p>
+        </div>
+
+        <div class="button-container">
+          <a href="#" ">
+            <button onclick="darkMode()">
+              Start Learning!
+            </button>
+          </a>
+
+          <a
+            href="https://github.com/RoboSapiens2021/snippet.js"
+            target="_blank"
+          >
+            <button class="outline">
+              Go to the github!
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section style="margin-top:12em">
+      <h1>Easy to use,</h1>
+
+      <h2>Import the Javascript</h2>
+      <div id="code" class="code code-wrapper" style="margin:60px"> &lt;script src=&quot;https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/highlight.js&lt;/script&gt;
+        </div>
+
+      <h2>Import the CSS</h2>
+      <div id="code" class="code code-wrapper" style="margin:60px"> &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/style.css&quot;&gt;</div>
+
+
+      <h2>Create the Snippet</h2>
+
+        </div>
+      <div id="code" class="code code-wrapper" style="margin:60px"> &lt;div id=&quot;code&quot; class=&quot;code code-wrapper&quot;&gt; &lt;/div&gt;
+
+
+        </div>
+
+
+      <h1>Aaannd your done!</h1>
+      <p>Well, almost. Look at the github for more!</p>
+      <a
+            href="https://github.com/RoboSapiens2021/snippet.js"
+            target="_blank"
+          >
+            <button class="outline">
+              Go to the github!
+            </button>
+          </a>
+      
+
+
+
+
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>This is snippet.js</h3>
+            <p>Hey! You made it to the bottom! </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 sparrowDev. designed by <span>sparrowDev</span></p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/highlight.js"></script>
+    <script>
+
+    var icon = document.getElementById("icon");
+    var logo = document.getElementById("logo")
+
+
+    icon.onclick = function(){
+      document.body.classList.toggle("dark-mode")
+      
+      if(document.body.classList.contains("dark-mode")){
+          icon.src = "images/sun.png";
+          logo.src = "images/logolight.png"
+        }else{
+          icon.src = "images/moon.png";
+          logo.src = "images/logo.png"
+        }
+    }
+    
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
